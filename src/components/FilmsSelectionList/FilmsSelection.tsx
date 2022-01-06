@@ -68,6 +68,7 @@ const FilmsSelectionList: React.FC<IFilmsListProps> = (props: IFilmsListProps) =
 
     const setSelectionBg = (el: HTMLElement): void => {
         const width = getComputedStyle(el).getPropertyValue("width");
+        console.log(width);
         const left = el.offsetLeft;
         selectionBgState.current = {
             width: parseFloat(width),
