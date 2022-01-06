@@ -1,0 +1,159 @@
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 30px 40px;
+    gap: 30px;
+
+    @media (max-width: 750px) {
+        flex-direction: column;
+        align-items: stretch;
+
+    }
+}
+
+// Left
+.selection {
+    display: flex;
+    flex-direction: column;
+    // min-width: 260px;
+    width: 260px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0px 0px 17px 0px rgb(1 1 2 / 12%);
+
+    @media (max-width: 900px) {
+        width: 180px;
+    }
+
+    @media (max-width: 750px) {
+        width: 100%;
+    }
+}
+
+.selectionHeader {
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    font-weight: 600;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: rgba(1,180,228, 1);
+
+    @media (max-width: 900px) {
+        font-size: 1em;
+        padding: 15px 5px;
+    }
+}
+
+.selectionList {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.selectionItem {
+    list-style: none;
+}
+
+.selectionButton {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 20px;
+    line-height: 1.4;
+    border: none;
+    background: none;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    color: #fff;
+
+    &:hover {
+        background: rgba(0,0,0,0.08);
+    }
+
+    &Active {
+        font-weight: 600;
+        background: rgba(0,0,0,0.08);
+    }
+}
+
+
+
+
+// Right 
+.rightContainer {
+    flex-grow: 1;
+}
+
+.listContainer {
+    position: relative;
+}
+
+.list {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    transition: all 200ms ease-in-out;
+}
+
+.item {
+    display: flex;
+    width: 100%;
+    list-style: none;
+    align-items: center;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 0px 17px 0px rgb(1 1 2 / 12%);
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+}
+
+.imgWrapper {
+    position: relative;
+    min-width: 94px;
+    width: 94px;
+    height: 141px;
+}
+
+.img {
+    height: 100%;
+    min-width: 100%;
+    width: 100%;
+}
+
+.itemInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 15px;
+}
+
+.itemName {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    text-overflow: ellipsis;
+    font-weight: 600;
+}
+
+.itemDate {
+    color: #999;
+}
+
+.itemPreview {
+    margin-top: 20px;
+
+    p {
+        display: -webkit-inline-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        margin: 0;
+        text-overflow: ellipsis;
+        padding: 0;
+        -webkit-line-clamp: 2;
+    }
+}

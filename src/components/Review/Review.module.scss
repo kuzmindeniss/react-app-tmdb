@@ -1,0 +1,117 @@
+.container {
+    color: #fff;
+    padding: 0;
+    border-bottom: 1px solid var(--primaryColor);
+    background-position: right -200px top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all .5s ease-in-out;
+    box-shadow: 0px 0px 25px 0px rgb(34 34 71);
+}
+
+.containerLeft {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.imgWrapper {
+    position: relative;
+    height: 450px;
+    width: 300px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0px 0px 17px 0px rgba(1, 1, 2, 1);
+
+    @media (max-width: 800px) {
+        width: 150px;
+        height: 225px;
+        border-radius: 16px;
+    }
+}
+
+.containerBg {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: auto;
+    background-image: linear-gradient(to right, rgba(5.88%, 4.71%, 4.71%, 1) 150px, rgba(5.88%, 4.71%, 4.71%, 0.85) 100%);
+}
+
+.contentContainer {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    padding: 30px 40px;
+    gap: 40px;
+    z-index: 0;
+}
+
+
+// Right
+
+.containerRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.filmName {
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+.filmYear {
+    font-size: 2.2rem;
+    font-weight: 400;
+    opacity: 0.8;
+    font-style: italic;
+}
+
+.infoFacts {
+    margin-bottom: 24px;
+    opacity: .8;
+    font-style: italic;
+}
+
+.infoDate {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.infoGenres {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.infoRuntime {
+    display: inline-block;
+}
+
+.previewTitle {
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+.previewText {
+    font-weight: 400;
+}
+
+.infoPeople {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+.infoPeopleItem {
+    display: flex;
+    flex-direction: column;
+    width: 33.3%;
+    list-style: none;
+    font-size: 0.9em;
+
+    &Name {
+        font-weight: bold;
+    }
+}
+

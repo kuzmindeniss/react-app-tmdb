@@ -1,0 +1,80 @@
+.userChart {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.chart {
+    display: inline-block;
+    flex-shrink: 0;
+    width: 68px;
+    height: 68px;
+    transition: transform .2s;
+    transform: scale(1);
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    margin-right: 8px;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.chartOuterRing {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    padding: 4px;
+    background-color: #081c22;
+}
+
+.chartScore {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.chartPercent {
+    width: 100%;
+    height: 100%;
+    font-weight: 700;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+
+    sup {
+        font-size: .5em;
+    }
+}
+
+.chartCanvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.userChartText {
+    font-weight: 700;
+    opacity: .8;
+    white-space: pre-line;
+}
+
+
+
+// Small
+.userChartSmall {
+    margin-bottom: 0;
+
+    .chart {
+        width: 34px;
+        height: 34px;
+        font-size: .6em;
+    }
+}

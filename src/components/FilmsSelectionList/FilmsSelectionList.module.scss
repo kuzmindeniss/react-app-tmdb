@@ -1,0 +1,146 @@
+@import 'styles/_variables';
+
+.filmsListContainer {
+    margin-top: 24px;
+}
+
+.listContainer {
+    position: relative;
+    min-height: 365px;
+}
+
+.listName {
+    display: inline-block;
+    font-size: 1.3em;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-weight: 600;
+    margin-right: 24px;
+}
+
+.listSelectionContainer {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+
+    margin-bottom: 16px;
+}
+
+.listSelection {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    border: 1px solid rgba(82,213,255, .1);
+    border-radius: 32px;
+    z-index: 1;
+}
+
+.listSelectionItem {
+    display: inline-block;
+    list-style: none;
+    z-index: 10;
+
+    &Active {
+        button {
+            color: #fff;
+        }
+    }
+}
+
+.listSelectionItemButton {
+    padding: 4px 20px;
+    background: none;
+    border-radius: 32px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: rgba($color-blue, 1);
+    transition: all .2s ease-in-out;
+    z-index: 10;
+
+    &:hover {
+        color: #fff;
+    }
+}
+
+.listSelectionBg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background:rgba($color-dark-blue, .3);
+    border-radius: 32px;
+    transition: all 200ms ease-in-out;
+    z-index: 1;
+    filter: blur(1px);
+}
+
+.list {
+    width: 100%;
+    display: grid;
+    overflow: auto;
+    grid-auto-flow: column;
+    grid-auto-columns: 150px;
+    grid-column-gap: 24px;
+    padding: 20px;
+    margin: 0;
+    transition: all 1000ms ease-in-out;
+
+    &::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        background: rgba(0, 0, 0, 0.05);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: linear-gradient(to left, rgba($color-blue, 1), rgba($color-blue, .6));
+        box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.8);
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(to left, #888, #777);
+    }
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.imageWrapper {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 225px;
+    transition: all .2s ease-in-out;
+    margin-bottom: 8px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 0px rgba(34, 34, 71, 0.5);
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.itemImage {
+    border-radius: 2px;
+}
+
+.itemName {
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.itemDate {
+    color: rgba(255, 255, 255, .8);
+}
