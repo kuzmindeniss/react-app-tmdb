@@ -108,9 +108,12 @@ const FilmsSelectionList: React.FC<IFilmsListProps> = (props: IFilmsListProps) =
     }
 
     useEffect(() => {
-        setData(props.selectionTypes[0]);
         if (!firstSelectionNodeRef.current) return;
         setSelectionBg(firstSelectionNodeRef.current as HTMLElement);
+    })
+
+    useEffect(() => {
+        setData(props.selectionTypes[0]);
     }, []);
 
     return (
