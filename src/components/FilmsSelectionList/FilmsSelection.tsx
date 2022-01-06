@@ -66,10 +66,9 @@ const FilmsSelectionList: React.FC<IFilmsListProps> = (props: IFilmsListProps) =
         },
     }
 
-    const setSelectionBg = (el: HTMLElement, isInit: boolean = false): void => {
+    const setSelectionBg = (el: HTMLElement): void => {
         const width = getComputedStyle(el).getPropertyValue("width");
-        let left = el.offsetLeft;
-        if (isInit) left = 0;
+        const left = el.offsetLeft;
         selectionBgState.current = {
             width: parseFloat(width),
             left,
@@ -109,8 +108,6 @@ const FilmsSelectionList: React.FC<IFilmsListProps> = (props: IFilmsListProps) =
 
     useEffect(() => {
         setData(props.selectionTypes[0]);
-        if (!firstSelectionNodeRef.current) return;
-        setSelectionBg(firstSelectionNodeRef.current as HTMLElement, true);
     }, []);
 
     return (
