@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './FilmsSearchList.module.scss';
 import { formatDate } from 'utils';
-import { IFilmsSearchMovieItemProps, IFilmsSearchTVItemProps } from './FilmsSearch.types';
+import { IFilmsSearchTVItemProps } from './FilmsSearch.types';
 import { Link } from 'react-router-dom';
 
 const TVItem: React.FC<IFilmsSearchTVItemProps> = (props: IFilmsSearchTVItemProps) => {

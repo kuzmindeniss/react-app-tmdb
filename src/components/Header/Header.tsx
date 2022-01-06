@@ -1,8 +1,7 @@
 import classNames from 'classnames';
 import React, { useState } from 'react';
 import styles from './Header.module.scss';
-import { createSearchParams, Link as a, Link } from 'react-router-dom';
-import { useEffect } from 'react';
+import { createSearchParams, Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
 const Header: React.FC = () => {

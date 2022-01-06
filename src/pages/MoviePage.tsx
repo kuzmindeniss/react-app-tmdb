@@ -1,4 +1,3 @@
-import FilmsSelectionList from 'components/FilmsSelectionList/FilmsSelection';
 import FilmsSelectionListWithProps from 'components/FilmsSelectionList/FilmsSelectionListWithProps';
 import { LayoutContent } from 'components/Layout/Layout';
 import RecommendationsList from 'components/RecommendationsList';

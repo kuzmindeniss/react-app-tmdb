@@ -2,7 +2,6 @@ import FilmsSelectionList from "components/FilmsSelectionList/FilmsSelection";
 import { LayoutContent } from "components/Layout/Layout";
 import MainSlider from "components/MainSlider/MainSlider";
 import { ISliderItem } from "components/MainSlider/MainSlider.types";
-import { TailSpin } from "react-loading-icons";
 
 const MainPage: React.FC = () => {
 	const sliderData: ISliderItem[] = [

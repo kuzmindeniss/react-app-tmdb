@@ -1,5 +1,3 @@
-import { ICreditsListProps } from "components/PersonInfo/types";
-
 export interface IDataMovie {
     poster_path: string | null
     adult: boolean

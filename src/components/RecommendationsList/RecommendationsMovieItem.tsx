@@ -1,7 +1,6 @@
 import React from 'react';
 import { IRecommendationsMovieItemProps } from './types';
 import styles from './Recommendations.module.scss';
-import { formatDate } from 'utils';
 import { Link } from 'react-router-dom';
 
 const RecommendationsMovieItem: React.FC<IRecommendationsMovieItemProps> = (props: IRecommendationsMovieItemProps) => {

@@ -1,6 +1,6 @@
 import { LayoutContent } from 'components/Layout/Layout';
 import PersonInfo from 'components/PersonInfo';
-import { ICreditsListProps, IDataActorWithAdditional } from 'components/PersonInfo/types';
+import { IDataActorWithAdditional } from 'components/PersonInfo/types';
 import { useAppDispatch } from 'rdx/hooks';
 import { fetchPerson, getPerson } from 'rdx/personSlice';
 import store from 'rdx/store';
@@ -8,7 +8,6 @@ import React, { useEffect, useState } from 'react';
 import { ThreeDots } from 'react-loading-icons';
 import { useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import { IDataActor } from 'types';
 
 const PersonPage: React.FC = () => {
 	const { id } = useParams();

@@ -1,6 +1,6 @@
 import { LayoutContent } from 'components/Layout/Layout';
 import PopularFilmsList from 'components/PopularFilmsList';
-import { IPopularMoviesObject, IPopularTVsObject } from 'components/PopularFilmsList/types';
+import { IPopularTVsObject } from 'components/PopularFilmsList/types';
 import { fetchPopularFilms, getPopularFilms } from 'rdx/filmSlice';
 import { useAppDispatch } from 'rdx/hooks';
 import store from 'rdx/store';

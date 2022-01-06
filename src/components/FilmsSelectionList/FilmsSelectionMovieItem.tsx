@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const MovieItem: React.FC<IMovieItemProps> = (props: IMovieItemProps) => {
     const id = props.item.id
-    const photoSrc = props.item.poster_path ? `http://image.tmdb.org/t/p/w300${props.item.poster_path}` : process.env.NEXT_PUBLIC_PHOTO_NOT_FOUND!;
+    const photoSrc = props.item.poster_path ? `https://image.tmdb.org/t/p/w300${props.item.poster_path}` : process.env.NEXT_PUBLIC_PHOTO_NOT_FOUND!;
 
     return (
         <li className={styles.item}>

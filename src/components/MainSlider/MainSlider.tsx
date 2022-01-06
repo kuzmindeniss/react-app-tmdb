@@ -1,4 +1,4 @@
-import React, { MutableRefObject, useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import React, { MutableRefObject, useEffect, useMemo, useRef, useState } from 'react';
 import styles from './MainSlider.module.scss';
 import { IMainSliderProps, ISliderItem } from './MainSlider.types';
 import SliderItem from './MainSliderItem';

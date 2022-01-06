@@ -1,4 +1,4 @@
-import { IPopularPeopleListProps, IPopularPeopleObject, IPopularPeopleResultItem } from "./types";
+import { IPopularPeopleListProps } from "./types";
 import styles from "./PopularPeopleList.module.scss";
 import { Link } from "react-router-dom";
 import { IDataMovie, IDataTV } from "types";

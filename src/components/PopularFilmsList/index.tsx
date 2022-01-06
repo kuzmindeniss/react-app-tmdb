@@ -14,7 +14,7 @@ const PopularFilmsList: React.FC<IPopularFilmsListProps> = (props: IPopularFilms
             const id = item.id;
             const title = (item as IDataMovie).title || (item as IDataTV).name
             const href = `/${props.type}/${id}`;
-            const imgHref = item.poster_path ? "http://image.tmdb.org/t/p/w220_and_h330_face/" +  item.poster_path : process.env.REACT_APP_PHOTO_NOT_FOUND;
+            const imgHref = item.poster_path ? "https://image.tmdb.org/t/p/w220_and_h330_face/" +  item.poster_path : process.env.REACT_APP_PHOTO_NOT_FOUND;
             const percent = Math.floor(item.vote_average * 10);
 
             return <li className={styles.item} key={id}>

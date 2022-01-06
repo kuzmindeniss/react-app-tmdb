@@ -1,10 +1,8 @@
-import FilmsSelectionList from 'components/FilmsSelectionList/FilmsSelection';
 import FilmsSelectionListWithProps from 'components/FilmsSelectionList/FilmsSelectionListWithProps';
 import { LayoutContent } from 'components/Layout/Layout';
 import RecommendationsList from 'components/RecommendationsList';
-import MovieReview from 'components/Review/Movie';
 import TVReview from 'components/Review/TV';
-import { fetchMovie, fetchTV, getFilmItem } from 'rdx/filmSlice';
+import { fetchTV, getFilmItem } from 'rdx/filmSlice';
 import { useAppDispatch } from 'rdx/hooks';
 import store from 'rdx/store';
 import React, { useState } from 'react';
@@ -12,7 +10,7 @@ import { useEffect } from 'react';
 import { ThreeDots } from 'react-loading-icons';
 import { useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import { IDataDetailedMovie, IDataDetailedTV } from 'types';
+import { IDataDetailedTV } from 'types';
 
 const TVPage: React.FC = () => {
 	const { id } = useParams();

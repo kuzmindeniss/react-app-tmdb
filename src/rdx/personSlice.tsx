@@ -2,7 +2,6 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 import { IDataActorWithAdditional } from "components/PersonInfo/types";
 import { IPopularPeopleObject } from "components/PopularPeopleList/types";
-import { IDataActor } from "types";
 import { RootState } from "./store";
 
 export interface IPersonState {

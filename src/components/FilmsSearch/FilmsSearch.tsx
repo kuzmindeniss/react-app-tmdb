@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { ContentDataType, ContentTypes, IDataTV } from 'types';
+import { ContentTypes } from 'types';
 import { IFilmsSearchList, SearchListSlugs } from './FilmsSearch.types';
 import ListUl from './FilmsSearchListUl';
 import styles from './FilmsSearchList.module.scss'
