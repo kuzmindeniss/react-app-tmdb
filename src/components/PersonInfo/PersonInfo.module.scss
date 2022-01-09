@@ -51,6 +51,10 @@
     }
 }
 
+.photo {
+    @include standard-img;
+}
+
 .creditsListContainer {
     padding-right: 20%;
 

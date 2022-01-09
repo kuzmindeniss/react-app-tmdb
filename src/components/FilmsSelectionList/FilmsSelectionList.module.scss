@@ -134,6 +134,7 @@
 
 .itemImage {
     border-radius: 2px;
+    @include standard-img;
 }
 
 .itemName {

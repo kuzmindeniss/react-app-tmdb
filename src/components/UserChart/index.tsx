@@ -24,7 +24,6 @@ const UserChart: React.FC<IUserChartProps> = (props: IUserChartProps) => {
         const percent = numb * 4;
 
         const zero = -0.5 * Math.PI;
-        const max = 0;
         const onePer = -0.5 * Math.PI / 100;
 
         return zero - (onePer * percent);

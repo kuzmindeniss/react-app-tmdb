@@ -48,7 +48,7 @@ const PersonInfo: React.FC<IPersonInfoProps> = (props: IPersonInfoProps) => {
     return (<div className={styles.container}>
         <div className={styles.leftContainer}>
             <div className={styles.photoWrapper}>
-                <img src={photoPath} alt="photo"/>
+                <img src={photoPath} alt="photo" className={styles.photo}/>
             </div>
             { getPersonalInfo() }
         </div>
