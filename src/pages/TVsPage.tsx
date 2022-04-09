@@ -35,7 +35,7 @@ const TVsPage: React.FC = () => {
 
 	useEffect(() => {
 		iniTVsObject();
-	})
+	}, [])
 
 	if (isLoading) return <LayoutContent>
 		<ThreeDots height="3em" fill="#06bcee" width={"100%"} />
